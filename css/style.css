@@ -7589,7 +7589,7 @@ p{
   color: #8d00ff;
 }
 
-.form-control::placeholder{
+.form-control placeholder{
   font-weight: 500;
 }
 
