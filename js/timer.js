@@ -75,6 +75,25 @@
   },)
   
   });
+
+  $(document).ready(function() {
+    const seconds = 1000,
+        minutes = seconds * 60,
+        hours = minutes * 60,
+        days = hours * 24;
+  
+  let countDown = new Date('Oct 31, 2020 00:00:00').getTime(),
+      x = setInterval(function() {
+  
+      let nows = new Date().getTime(),
+      distance = countDown - nows;
+  
+      document.getElementById('days33').innerText = Math.floor(distance / (days)),
+      document.getElementById('hours33').innerText = Math.floor((distance % (days)) / (hours)),
+      document.getElementById('minutes33').innerText = Math.floor((distance % (hours)) / (minutes));
+  },)
+  
+  });
   
   
   }(jQuery));

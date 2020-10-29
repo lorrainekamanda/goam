@@ -2083,11 +2083,11 @@ input:-internal-autofill-selected {
 /**************menu part start*****************/
 /* line 2, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
 .home_menu {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 2;
 }
 
 /* line 11, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
@@ -7221,7 +7221,7 @@ body,
     height: 100%; } }
 
     #view1{
-      background-image: url('/img/heading/goam10.jpg');
+      background-image: url('/img/heading/e2.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
@@ -7230,7 +7230,7 @@ body,
       font-family: 'Josefin Sans', sans-serif;
     }
     #view2{
-      background-image: url('/img/heading/goam1.jpg');
+      background-image: url('/img/heading/e1.jpg');
       background-repeat: no-repeat; 
       background-size: cover;
       background-position: center center;
@@ -7254,6 +7254,7 @@ body,
       padding: 0;
       margin: 0;
       font-size: 14px;
+      scroll-behavior: smooth  !important;;
     }
 
 .btn{
